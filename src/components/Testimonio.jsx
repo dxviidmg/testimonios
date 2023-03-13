@@ -1,14 +1,14 @@
 import '../css/Testimonio.css'
 
-export function Testimonio(){
+export function Testimonio({photo, name, country, position, company, testimony}){
     return(
         <div className="contenedor-testimonio">
-            <img className="imagen-testimonio" alt="Foto de emma" src={require("../images/testimonio-emma.png")}/>
+            <img className="imagen-testimonio" alt="{name}'s potho" src={require(`../images/${photo}`)}/>
 
         <div className="contenedor-texto-testimonio">
-            <p className="nombre-testimonio">Emma Bostian en Suecia</p>
-            <p className="nombre-testimonio">Ingerniera de Software en Spotify</p>
-            <p className="cargo-testimonio">fasd asdf asdf asdf asdf asdf sdf sdf sdf sdf sdf fasd asdf asdf asdf asdf asdf sdf sdf sdf sdf sdf fasd asdf asdf asdf asdf asdf sdf sdf sdf sdf sdf fasd asdf asdf asdf asdf asdf sdf sdf sdf sdf sdf</p>
+            <p className="nombre-testimonio">{name} en {country}</p>
+            <p className="cargo-testimonio">{position} en {company}</p>
+            <p className="texto-testimonio">{testimony}</p>
         </div>
 
         </div>
