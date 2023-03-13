@@ -1,6 +1,6 @@
-import '../css/Testimonio.css'
+import '../css/Testimony.css'
 
-export function Testimonio({photo, name, country, position, company, testimony}){
+export function Testimony({photo, name, country, position, company, testimony}){
     return(
         <div className="contenedor-testimonio">
             <img className="imagen-testimonio" alt="{name}'s potho" src={require(`../images/${photo}`)}/>
